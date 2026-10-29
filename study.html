@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#163b32">
+    <meta name="description" content="Explore departments, programmes, and courses offered at Federal Polytechnic Kampe, ILLIONIS.">
+    <title>Departments &amp; Courses | Federal Polytechnic Kampe, ILLIONIS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="study.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Federal Polytechnic Kampe home">
+        <span class="brand-mark" aria-hidden="true">FPK</span>
+        <span class="brand-name">
+          <strong>Federal Polytechnic Kampe</strong>
+          <small>ILLIONIS · Knowledge · Skills · Opportunity</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-navigation" id="site-navigation" aria-label="Main navigation">
+        <a class="nav-link" href="index.html#home">Home</a>
+        <div class="nav-group">
+          <a class="nav-link" href="index.html#admissions">Admissions</a>
+          <div class="nav-submenu">
+            <a href="index.html#full-time">Full-time students</a>
+            <a href="index.html#part-time">Part-time students</a>
+          </div>
+        </div>
+        <a class="nav-link active" href="study.html" aria-current="page">Study options</a>
+        <a class="nav-link" href="application.php">Apply</a>
+        <a class="nav-link" href="index.html#about">About us</a>
+        <a class="nav-link nav-contact" href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="study-page section-wrap" aria-labelledby="study-heading">
+        <a class="study-back-link" href="index.html#admissions">← Back to admissions</a>
+        <p class="eyebrow eyebrow-green">Explore what you can study</p>
+        <h1 id="study-heading">Departments, programmes &amp; courses</h1>
+        <p class="study-intro-copy">Explore the departments and course information shared so far. Suggested courses are illustrative only and are not confirmed school offerings. Contact the school to verify the official course list, availability, and admission requirements.</p>
+        <a class="button button-gold application-cta" href="application.php">Apply to a programme <span aria-hidden="true">→</span></a>
+        <p class="catalog-session" id="catalog-session"></p>
+        <div class="catalog-grid" id="academic-catalog-list" aria-live="polite">
+          <p class="catalog-message">Loading departments and courses…</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand-footer" href="index.html#home">
+        <span class="brand-mark" aria-hidden="true">FPK</span>
+        <span class="brand-name"><strong>Federal Polytechnic Kampe, ILLIONIS</strong><small>Illinois, Kwara State</small></span>
+      </a>
+      <p>© <span id="current-year"></span> Federal Polytechnic Kampe. All rights reserved.</p>
+      <a href="#main-content" class="back-to-top">Back to top ↑</a>
+      <a href="login.php" class="staff-portal-link">Staff portal</a>
+    </footer>
+
+    <nav class="social-float" aria-label="School social media">
+      <a class="social-float-link social-tiktok" href="https://www.tiktok.com/@fpk" target="_blank" rel="noopener noreferrer" aria-label="Visit the school's TikTok profile @fpk" title="TikTok @fpk">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-4.22-4.23V2h-3.45v13.67a2.9 2.9 0 0 1-2.9 2.9 2.9 2.9 0 1 1 2.9-2.9c0-.25-.03-.5-.08-.73V11.4a6.35 6.35 0 1 0 3.53 5.7V10.1a8.2 8.2 0 0 0 4.8 1.54V8.2c-.2 0-.4-.02-.59-.06Z"/>
+        </svg>
+      </a>
+      <a class="social-float-link social-instagram" href="https://www.instagram.com/fpk" target="_blank" rel="noopener noreferrer" aria-label="Visit the school's Instagram profile @fpk" title="Instagram @fpk">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle class="instagram-dot" cx="17.5" cy="6.7" r="1"/>
+        </svg>
+      </a>
+      <a class="social-float-link social-x" href="https://x.com/fpk" target="_blank" rel="noopener noreferrer" aria-label="Visit the school's X profile @fpk" title="X @fpk">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M18.9 2H22l-6.78 7.75L23.2 22h-6.25l-4.9-7.44L5.54 22H2.4l7.25-8.29L1.8 2h6.4l4.43 6.96L18.9 2Zm-1.1 17.9h1.73L7.27 3.99H5.42L17.8 19.9Z"/>
+        </svg>
+      </a>
+    </nav>
+  </body>
+</html>
